@@ -20,8 +20,8 @@ function Skills() {
         </div>
         <div className="flex gap-17 ">
           <motion.div
-            initial={{ x: 0, y: 0 }}
-            animate={{ x: 100, y: 100 }}
+            initial={{ opacity: 0, x: -100, y: -100 }}
+            whileInView={{ opacity: 1, x: 100, y: 60 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.8 }}
@@ -56,8 +56,8 @@ function Skills() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ x: 0, y: 0 }}
-            animate={{ x: 100, y: 100 }}
+            initial={{ opacity: 0, x: -100, y: -100 }}
+            whileInView={{ opacity: 1, x: 100, y: 60 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.8 }}
@@ -92,11 +92,11 @@ function Skills() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ x: 0, y: 0 }}
-            animate={{ x: 100, y: 100 }}
+            initial={{ opacity: 0, x: -100, y: -100 }}
+            whileInView={{ opacity: 1, x: 100, y: 60 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1.0 }}
             className="w-80  shadow-lg shadow-[#F16C59]/50 p-6"
           >
             <div className="text-center p-4 text-white text-2xl font-bold font-[Manrope]">

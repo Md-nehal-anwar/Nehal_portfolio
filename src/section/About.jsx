@@ -5,7 +5,7 @@ import { FaReact } from "react-icons/fa";
 function About() {
   return (
     <>
-      <div className="bg-(--primary_color) font-[Manrope] flex px-28 pt-16">
+      <div className="bg-(--primary_color) font-[Manrope] flex px-28 pt-24">
         <div className="w-1/2 text-white">
           <div className="text-white flex items-center gap-10 pb-4">
             <div className="h-16 w-0 border-[2px] border-[#F16C59] "></div>

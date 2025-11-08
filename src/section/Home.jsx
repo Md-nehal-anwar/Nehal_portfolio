@@ -44,7 +44,7 @@ function Home() {
               </p>
             </div>
             <div className=" w-28 py-2 mt-2 ">
-              <p className=" flex justify-center items-center bg-(--secondary_color)  text-white h-10 font-['Manrope'] px-2 rounded-md hover:cursor-pointer hover:bg-(--primary_color) hover:border-2 hover:border-(--secondary_color) ">
+              <p className=" flex justify-center items-center bg-(--secondary_color)  text-white h-10 font-['Manrope'] px-2  hover:cursor-pointer hover:bg-white hover:border-2 hover:border-(--secondary_color) hover:text-(--secondary_color) mt-2  ">
                 My Resume
               </p>
             </div>

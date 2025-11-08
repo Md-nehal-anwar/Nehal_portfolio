@@ -1,8 +1,8 @@
-import Navbar from "./components/navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 import "./App.css";
 import Home from "./section/home.jsx";
-import Footer from "./components/footer.jsx";
-import Achievement from "./section/Achievement.jsx";
+import Footer from "./components/Footer.jsx";
+import Achievement from "./section/Exierience&Achievement.jsx";
 import Contact from "./section/Contact.jsx";
 import Skills from "./section/Skills.jsx";
 import About from "./section/About.jsx";

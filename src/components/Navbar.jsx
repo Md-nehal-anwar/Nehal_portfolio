@@ -9,19 +9,20 @@ function Navbar() {
     { name: "About", path: "about", smooth: true, duration: 500, spy: true },
     { name: "Skills", path: "skills", smooth: true, duration: 500, spy: true },
     {
+      name: "Project",
+      path: "project",
+      smooth: true,
+      duration: 500,
+      spy: true,
+    },
+    {
       name: "Achievement",
       path: "achievement",
       smooth: true,
       duration: 500,
       spy: true,
     },
-    {
-      name: "Experience",
-      path: "experience",
-      smooth: true,
-      duration: 500,
-      spy: true,
-    },
+
     {
       name: "Contact",
       path: "contact",
@@ -31,9 +32,12 @@ function Navbar() {
     },
   ];
 
+   const handleSetActive = (to) => {
+     const index = navItems.findIndex((item) => item.path === to);
+     setActive(index);
+   };
   return (
     <nav className="flex justify-between items-center bg-[var(--primary_color)] py-4 md:px-28 px-8 fixed top-0 w-full z-50">
-      {/* Logo / Name */}
       <div className="text-xl md:text-3xl text-white font-['Inter'] font-bold">
         Md Nehal Anwar
       </div>
@@ -41,21 +45,16 @@ function Navbar() {
       {/* Navigation Links */}
       <ul className="flex justify-around items-center gap-2 md:gap-6 text-base md:text-xl font-semibold">
         {navItems.map((item, index) => (
-          <li
-            key={index}
-            onClick={() => setActive(index)}
-            className="relative group cursor-pointer"
-          >
+          <li key={index} className="relative group cursor-pointer">
             <Link
+              onSetActive={() => handleSetActive(item.path)}
               to={item.path}
               smooth={item.smooth}
               duration={item.duration}
               spy={item.spy}
-              offset={-70} // for navbar height adjustment
+              offset={-100} // for navbar height adjustment
               className={`transition-colors duration-300 ${
-                active === index
-                  ? "text-white"
-                  : "text-[var(--text_color)]"
+                active === index ? "text-white" : "text-[var(--text_color)]"
               }`}
             >
               {item.name}

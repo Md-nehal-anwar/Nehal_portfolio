@@ -46,7 +46,7 @@ function Contact() {
               <div className="py-10">
                 {/* ⚠️ type="submit" me space hatao */}
                 <button
-                  className="h-10 px-6 bg-(--secondary_color) text-white font-semibold hover:bg-white hover:text-(--secondary_color)"
+                  className="h-10 px-6 bg-(--secondary_color) text-white font-semibold hover:bg-white hover:text-(--secondary_color) hover:border-2 hover:border-(--secondary_color)"
                   type="submit"
                 >
                   Submit

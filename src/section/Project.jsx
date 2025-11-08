@@ -1,9 +1,10 @@
 import React from 'react'
+import { motion } from "motion/react";
 
 function Project() {
   return (
     <>
-      <div className="bg-(--primary_color) text-white px-28 py-20 font-[Manrope] relative ">
+      <div className="bg-(--primary_color) text-white px-4 py-20 pb-30 font-[Manrope] relative ">
         <div className="text-center text-white text-4xl font-bold pb-4">
           Project
         </div>
@@ -11,9 +12,42 @@ function Project() {
           <div className="relative  w-0 h-20 border-2  border-[#F16C59] items-center "></div>
           <div className=" absolute mt-22  w-2 h-2 border-4 rounded-full border-[#F16C59] items-center "></div>
         </div>
-        <div>
-          <div></div>
-          <div></div>
+        <div className="flex  flex-row pt-10 justify-center ">
+          <div className="w-1/2 pr-40 ">
+            <motion.div
+              initial={{ opacity: 0, x: -150 }}
+              whileInView={{ opacity: 1, x: 100, y: 60 }}
+              transition={{ duration: 1.0 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+              className=" shadow-lg shadow-[#F16C59]/50 p-2"
+            >
+              <img className="z-10" src="/project_1_img.png" />
+            </motion.div>
+          </div>
+          <div className="w-1/2 pr-48">
+            <motion.div
+              initial={{ opacity: 0, x: 150 }}
+              whileInView={{ opacity: 1, x: 100, y: 60 }}
+              transition={{ duration: 1.0 }}
+              className=""
+            >
+              <div>
+                <div className="pb-4 text-white text-2xl font-bold font-[Manrope] text-justify ">
+                  NGO (Humanhood)
+                </div>
+                <div>
+                  <p className="text-white text-justify text-lg ">
+                    This project represents a complete frontend upgrade of the
+                    Human Hood NGO website. Originally developed using React and
+                    CSS, it was converted to React + Vite + Tailwind CSS to
+                    achieve faster build times, smoother development workflow,
+                    and a cleaner, mobile-responsive interface.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </>
