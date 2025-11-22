@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar.jsx";
 import "./App.css";
-import Home from "./section/home.jsx";
+import Home from "./section/Home.jsx";
 import Footer from "./components/Footer.jsx";
 import Achievement from "./section/Exierience&Achievement.jsx";
 import Contact from "./section/Contact.jsx";
