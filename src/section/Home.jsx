@@ -163,9 +163,9 @@ function Home() {
           </div>
           <div className=" md:w-1/2 flex md:block justify-center items-center md:px-80 md:mt-[-70px] md:ml-[-110px]">
             <div className="w-110 h-110 bg-[radial-gradient(circle_at_center,_#352B31_40%,_#121E28_70%,_#0b1218_100%)] py-20 px-15 rounded-full justify-center items-center flex">
-              <div className=" h-70 w-70 border-24 border-[#F16C59] rounded-full"></div>
+              <div className=" relative h-70 w-70 border-24 border-[#F16C59] rounded-full"></div>
               <img
-                className="   h-100"
+                className="absolute   h-100"
                 src="nehalimg.png
                 "
               />                         
